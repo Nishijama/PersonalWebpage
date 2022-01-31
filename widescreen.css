@@ -1,0 +1,149 @@
+
+body {
+  font-family: Arial;
+  font-weight: normal;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+h1, h2 {
+  font-family: Arial;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+#subtitle {
+  color: gray;
+}
+
+
+img {
+  width:auto;
+  height: 100px;
+  display: block;
+  margin: auto;
+}
+
+#master_container {
+  width: 60%;
+  margin:40px auto auto auto;
+}
+
+#sub_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#projects {
+  width:45%;
+  margin-right:20px;
+}
+
+#tech_stack {
+  width:45%;
+  margin-left:20px;
+}
+
+#projects_grid {
+    margin-top:30px;
+    display: grid;
+    grid-template-columns:auto ;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    font-size: 20px;
+    justify-content: center;
+}
+#tech_stack_grid {
+    margin-top:30px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+    max-width: 100%;
+    height: auto;
+    justify-content: space-around;
+}
+.projects_item a {
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+  text-decoration:none;
+  color:black;
+}
+
+.icon {
+  display: inline-block;
+  height:50px;
+  padding: 0px;
+  margin:0 10px;
+}
+
+.material-icons-outlined.md-36 { font-size: 36px; margin:10px; }
+.material-icons-outlined.md-36.white { color: white;}
+
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  max-height: 80px;
+  margin: auto;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+
+.logo:hover {filter:none;}
+
+#bottom_bar {
+ background-color:black;
+ margin: 0px;
+ width: 100%;
+ height: 60px;
+ position: fixed;
+ bottom: 0;
+ right: 0;
+ display:flex;
+ flex-direction:row;
+}
+
+#bottom_bar a {
+  margin: auto;
+  display:flex;
+  flex-direction:row;
+}
+
+a .small_logo {
+  max-width: 100%;
+  height: auto;
+  max-height: 50px;
+  margin: auto;
+}
+.ma {
+  height:80px;
+}
+
+@media only screen and (max-width: 900px) {
+  #sub_container {
+    display: flex;
+    flex-direction: column;
+  }
+  #projects, #tech_stack {
+    margin:0;
+    width: 100%;
+  }
+  .icon {
+  display: block;
+  height:50px;
+  }
+  #projects_grid {
+    margin-top:30px;
+    display: grid;
+    grid-template-columns:auto;
+    grid-row-gap: 20px;
+    font-size: 18px;
+    text-align: right;
+    justify-content: space-around;
+}
+
+}
