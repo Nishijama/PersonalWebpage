@@ -4,7 +4,6 @@ body {
   font-weight: normal;
   margin-top: 80px;
   margin-bottom: 100px;
-  text-decoration: none;
 }
 
 h1, h2 {
@@ -112,6 +111,7 @@ img {
   margin: auto;
   display:flex;
   flex-direction:row;
+  text-decoration: none;
 }
 
 a .small_logo {
