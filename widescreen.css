@@ -1,28 +1,82 @@
 
+/* ************** TAG STYLE ************** */
+
 body {
-  font-family: Arial;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   margin-top: 80px;
   margin-bottom: 100px;
 }
 
 h1, h2 {
-  font-family: Arial;
   font-weight: normal;
   text-align: center;
   letter-spacing: 2px;
 }
 
-#subtitle {
-  color: gray;
+hr  {
+  height:0;
+  border: none;
+  border-top: 1px solid black;
+  background-color: white;
 }
-
 
 img {
   width:auto;
   height: 100px;
   display: block;
   margin: auto;
+}
+
+/* ************** CLASS STYLE ************** */
+.projects_item a {
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+  text-decoration:none;
+  color:black;
+}
+
+.projects_item p {
+  text-align: left;
+}
+
+.icon {
+  display: inline-block;
+  height:50px;
+  padding: 0px;
+  margin:0 10px;
+}
+
+.material-icons-outlined.md-36 { font-size: 36px; margin:10px; }
+.material-icons-outlined.md-36.white { color: white;}
+
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  max-height: 80px;
+  margin: auto;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+
+.logo:hover {filter:none;}
+
+
+a .small_logo {
+  max-width: 100%;
+  height: auto;
+  max-height: 50px;
+  margin: auto;
+}
+
+
+/* ************** ID STYLE ************** */
+
+.subtitle {
+  color: gray;
+  margin-bottom: 10vh;
 }
 
 #master_container {
@@ -65,35 +119,7 @@ img {
     height: auto;
     justify-content: space-around;
 }
-.projects_item a {
-  display:flex;
-  flex-direction: row;
-  align-items:center;
-  text-decoration:none;
-  color:black;
-}
 
-.icon {
-  display: inline-block;
-  height:50px;
-  padding: 0px;
-  margin:0 10px;
-}
-
-.material-icons-outlined.md-36 { font-size: 36px; margin:10px; }
-.material-icons-outlined.md-36.white { color: white;}
-
-
-.logo {
-  max-width: 100%;
-  height: auto;
-  max-height: 80px;
-  margin: auto;
-  filter: grayscale(100%);
-  transition: 0.3s;
-}
-
-.logo:hover {filter:none;}
 
 #bottom_bar {
  background-color:black;
@@ -114,15 +140,7 @@ img {
   text-decoration: none;
 }
 
-a .small_logo {
-  max-width: 100%;
-  height: auto;
-  max-height: 50px;
-  margin: auto;
-}
-.ma {
-  height:80px;
-}
+/* ************** MEDIA QUERIES ************** */
 
 @media only screen and (max-width: 900px) {
   #sub_container {
@@ -145,6 +163,6 @@ a .small_logo {
     font-size: 18px;
     text-align: right;
     justify-content: space-around;
-}
+  }
 
 }
