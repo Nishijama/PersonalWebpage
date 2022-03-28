@@ -1,4 +1,5 @@
 
+
 /* ************** TAG STYLE ************** */
 
 body {
@@ -165,4 +166,62 @@ a .small_logo {
     justify-content: space-around;
   }
 
+}
+
+
+/* ***********************************|| FULLSTACK.HTML || *******************************/
+
+
+.horizontal_panel {
+  background-color: #ddd;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+}
+.panel_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.panel_text a {
+  text-decoration: none;
+  color:gray;
+  margin-right: 20px;
+}
+
+.external_links {
+  display: flex;
+  flex-direction: row;
+  
+}
+.inline-icon {
+  vertical-align: -6px;
+  margin-right: 5px;
+}
+
+.screenshot {
+  height: 20vmin;
+  width: auto;
+  margin-right: 15px;
+  border-bottom: black solid 2px;
+}
+
+h4 {
+  margin: 5px 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .horizontal_panel {
+    flex-direction: column;
+  }
+  .screenshot {
+    height: 20vmin;
+    width: auto;
+    border-bottom: black solid 2px;
+    margin:auto;
+    margin-bottom: 15px;
+  }
+  
 }
