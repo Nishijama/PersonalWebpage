@@ -217,8 +217,8 @@ h4 {
     flex-direction: column;
   }
   .screenshot {
-    height: 20vmin;
-    width: auto;
+    height: auto;
+    width: 100%;
     border-bottom: black solid 2px;
     margin:auto;
     margin-bottom: 15px;
