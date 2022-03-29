@@ -29,6 +29,7 @@ img {
   margin: auto;
 }
 
+
 /* ************** CLASS STYLE ************** */
 .projects_item a {
   display:flex;
@@ -71,6 +72,16 @@ a .small_logo {
   max-height: 50px;
   margin: auto;
 }
+
+.bottom_tooltip {
+  color: white;
+  display: none;
+  position: absolute;
+  padding-left: 60px;
+  font-size: large;
+}
+
+
 
 
 /* ************** ID STYLE ************** */
@@ -141,6 +152,8 @@ a .small_logo {
   text-decoration: none;
 }
 
+
+
 /* ************** MEDIA QUERIES ************** */
 
 @media only screen and (max-width: 900px) {
@@ -168,9 +181,20 @@ a .small_logo {
 
 }
 
+/* ***********************************|| FULLSTACK & FRONT END HTML || *******************************/
 
-/* ***********************************|| FULLSTACK.HTML || *******************************/
+h4 {
+  margin: 5px 0;
+}
 
+.external_links {
+  display: flex;
+  flex-direction: row;
+}
+
+.go_back {
+  margin: 20px 0;
+}
 
 .horizontal_panel {
   background-color: #ddd;
@@ -180,6 +204,12 @@ a .small_logo {
   flex-direction: row;
   padding: 15px;
 }
+
+.inline-icon {
+  vertical-align: -6px;
+  margin-right: 5px;
+}
+
 .panel_text {
   display: flex;
   flex-direction: column;
@@ -191,16 +221,6 @@ a .small_logo {
   margin-right: 20px;
 }
 
-.external_links {
-  display: flex;
-  flex-direction: row;
-  
-}
-.inline-icon {
-  vertical-align: -6px;
-  margin-right: 5px;
-}
-
 .screenshot {
   height: 20vmin;
   width: auto;
@@ -208,9 +228,7 @@ a .small_logo {
   border-bottom: black solid 2px;
 }
 
-h4 {
-  margin: 5px 0;
-}
+/* ************** MEDIA QUERIES ************** */
 
 @media only screen and (max-width: 900px) {
   .horizontal_panel {
@@ -223,5 +241,4 @@ h4 {
     margin:auto;
     margin-bottom: 15px;
   }
-  
 }

@@ -3,6 +3,7 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
   		<link rel="stylesheet" href="widescreen.css">
+		<link rel="icon" href="favicon.ico?v=2">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 	</head>
 	<body>
@@ -17,8 +18,8 @@
 					<h2>Projects</h2>
 					<hr>
 					<div id='projects_grid'>
-						<div class='projects_item'><!--<img class='icon' src='static/images/web_app_icon.png'>--><a href='./full_stack.html'><span class="material-icons-outlined md-36"> code </span><p>Full Stack Applications</p></a></div>
-						<div class='projects_item'><!--<img class='icon' src='static/images/website_icon.png'>--><a href='https://nishijama.github.io/FourInRowGame/'><span class="material-icons-outlined md-36">palette</span><p>Front-end projects</p></a></div>
+						<div class='projects_item'><!--<img class='icon' src='static/images/web_app_icon.png'>--><a href='./full_stack_projects.html'><span class="material-icons-outlined md-36"> code </span><p>Full Stack Applications</p></a></div>
+						<div class='projects_item'><!--<img class='icon' src='static/images/website_icon.png'>--><a href='./front_end_projects.html'><span class="material-icons-outlined md-36">palette</span><p>Front-end projects</p></a></div>
 						<div class='projects_item'><!--<img class='icon' src='static/images/extension_icon.png'>--><a href='#'><span class="material-icons-outlined md-36"> extension </span><p>Browser Extensions</p></a></div>
 					</div>
 				</div>
@@ -39,10 +40,16 @@
 			</div>
 		</div>
 		<div id='bottom_bar'>
-			<a href="https://nishijama.github.io/AboutMe/"><span class="material-icons-outlined md-36 white" alt='About me page'>badge</span></a>
-			<a href='https://www.github.com/nishijama'><img class='small_logo' src='static/images/github_logo.png' alt='GitHub link'></a>
+			<a href="https://nishijama.github.io/AboutMe/">
+				<span id='AboutIcon' class="material-icons-outlined md-36 white" alt='About me page'>badge</span>
+				<p class='bottom_tooltip' id="AboutTooltip">About me</p>
+			</a>
+			<a href='https://www.github.com/nishijama'>
+				<img id="GitLogo" class='small_logo' src='static/images/github_logo.png' alt='GitHub link'>
+				<p class='bottom_tooltip' id="GitTooltip">My GitHub</p>
+			</a>
 			<a href="mailto:filipbplociennik@gmail.com"><span class="material-icons-outlined md-36 white" alt='Contact me page'>alternate_email</span></a>
 		</div>
-
+		<script src="script.js"></script>
 	</body>
 </html>
