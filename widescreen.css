@@ -230,7 +230,7 @@ margin: 0 15px;
 .screenshot {
   width: 100%;
   height: auto;
-  border-bottom: black solid 2px;
+  /* border-bottom: black solid 2px; */
 }
 
 /* ************** MEDIA QUERIES ************** */
@@ -240,6 +240,11 @@ margin: 0 15px;
     margin: 10px auto;
     flex-direction: column;
   }
+.screenshootContainer{
+  margin: auto;
+  max-width: 100%;
+  /* width: 100%; */
+}
   .screenshot {
     height: auto;
     width: 100%;
