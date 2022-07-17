@@ -52,7 +52,10 @@ img {
 
 .material-icons-outlined.md-36 { font-size: 36px; margin:10px; }
 .material-icons-outlined.md-36.white { color: white;}
-
+.tech_stack_item {
+  display: flex;
+  align-items: baseline;
+}
 
 .logo {
   max-width: 100%;
@@ -61,6 +64,7 @@ img {
   margin: auto;
   filter: grayscale(100%);
   transition: 0.3s;
+  
 }
 
 .logo:hover {filter:none;}
@@ -121,15 +125,15 @@ a .small_logo {
     font-size: 20px;
     justify-content: center;
 }
+
 #tech_stack_grid {
     margin-top:30px;
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-column-gap: 10px;
+    grid-template-columns: 22% 22% 22% 22%;
+    grid-column-gap: 4%;
     grid-row-gap: 30px;
     max-width: 100%;
     height: auto;
-    justify-content: space-around;
 }
 
 
